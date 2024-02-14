@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Photos/profile.jpg"alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Passionate developer, continuously learning and coding by day, gaming enthusiast exploring virtual realms by night</p>
+
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-link" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaSctrip</li>
+                            <li><span>Backend</span><br>DSA</li>
+                            <li><span>DevOps</span><br>Java AWS</li>
+                            <li><span>Database</span><br>mySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Graduate Engineering Trainee (GET) - VOIS | AUG 2023 – Present</span><br>Hands-on experience as a trainee, specializing in SQL and UNIX systems.<br>
+                            Proven ability to analyze, design, and implement database solutions, ensuring optimal 
+                                performance.</li>
+                            <li><span>Java Intern - Svanetr Innovations| DEC 2022 – FEB 2023
+                            </span><br>Developing, testing, and debugging code within a team environment. <br>
+                            Demonstrated proficiency in Java frameworks and a keen interest in software development 
+                            practices.
+                            </li>
+                            <li><span>Volunteer - DreamHack | DEC 2018</span><br>Volunteered with Groups and Organizations to help make measurable differences in program. <br>
+                            Engaged in volunteer work for a gaming event, showcasing expertise in managing and assembling 
+                            PCs. <br>
+                            Successfully contributed to the seamless execution of the event by organizing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SPPU JSCOE | AUG 2019 – JUL 2023</span><br> Bachler’s Degree in Electronic and Telecommunication </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link") 
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
