@@ -1,80 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Photos/profile.jpg"alt="profile photo">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>Passionate developer, continuously learning and coding by day, gaming enthusiast exploring virtual realms by night</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="Hi! I'm axtant" />
+    <meta property="og:title" content="About me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Hi! I'm also abhis" />
+  </head>
+  <body>
+    <div class="flex items-center space-between w-full flex-col font-medium">
+      <main
+        class="mx-auto w-full px-12 md:px-0 md:w-2/3 lg:w-1/2 2xl:w-1/3 h-full relative gap-16 py-18 flex flex-col"
+      >
+        <nav class="flex justify-between">
+          <a id="logo" class="flex flex-col gap-1">
+            <h2 class="text-2xl font-semibold leading-none">mr a. gorde</h2>
+            <p class="text-base opacity-50 italic leading-none font-normal">aka axtant</p>
+          </a>
+          <div id="links" class="gap-5 flex items-center">
+            <a href="https://github.com/axtant"><!-- TODO: replace # with your GitHub URL -->
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://x.com/abhishkx"><!-- TODO: replace # with your Twitter/X URL -->
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abhigg"><!-- TODO: replace # with your LinkedIn URL -->
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://steamcommunity.com/groups/aboutaxtant"><!-- TODO: replace # with your Steam URL -->
+              <i class="fa-brands fa-steam"></i>
+            </a>
+          </div>
+        </nav>
+        <section id="content">
+          <h1 class="text-xl font-bold flex gap-2">
+            <div>What's up?</div>
+            <div>👋</div>
+          </h1>
+          <p class="text-base opacity-50">
+            Building things, one line at a time
+            <!-- TODO: replace with your own tagline -->
+          </p>
+        </section>
+        <section id="projects" class="md:ml-6 flex flex-col gap-10">
+          <a class="flex gap-2 flex-col" href="https://www.notion.so/H-22dba305861780a38400f6afbcb31e18">
+            <!-- TODO: replace # with your project URL -->
+            <h3 class="font-bold text-xl">2hype | CS2 Community Server</h3>
+            <!-- TODO: replace with your project name -->
+            <p class="opacity-50 text-sm max-w-81">
 
-                    
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-link" id="skills">
-                        <ul>
-                            <li><span>Frontend</span><br>HTML, CSS, JavaScritp</li>
-                            <li><span>Backend</span><br>DSA</li>
-                            <li><span>DevOps</span><br>Java AWS</li>
-                            <li><span>Database</span><br>mySQL</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Graduate Engineering Trainee (GET) - VOIS | AUG 2023 – Present</span><br>Hands-on experience as a trainee, specializing in SQL and UNIX systems.<br>
-                            Proven ability to analyze, design, and implement database solutions, ensuring optimal 
-                                performance.</li>
-                            <li><span>Java Intern - Svanetr Innovations| DEC 2022 – FEB 2023
-                            </span><br>Developing, testing, and debugging code within a team environment. <br>
-                            Demonstrated proficiency in Java frameworks and a keen interest in software development 
-                            practices.
-                            </li>
-                            <li><span>Volunteer - DreamHack | DEC 2018</span><br>Volunteered with Groups and Organizations to help make measurable differences in program. <br>
-                            Engaged in volunteer work for a gaming event, showcasing expertise in managing and assembling 
-                            PCs. <br>
-                            Successfully contributed to the seamless execution of the event by organizing.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>SPPU JSCOE | AUG 2019 – JUL 2023</span><br> Bachler’s Degree in Electronic and Telecommunication </li>
-                        </ul>
-                    </div>
-                    
-                </div>
+              <!-- TODO: replace with your project description -->
+            </p>
+            <div class="flex text-sm font-bold items-center gap-2">
+              Learn More
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
+          </a>
+          <div class="flex font-bold text-sm items-center gap-4">
+            <div class="hidden md:block whitespace-nowrap opacity-20">
+              Blog Posts
+            </div>
+            <div class="line-holder">
+              <div class="smallLine smallLine1"></div>
+              <div class="smallLine smallLine2"></div>
+            </div>
+          </div>
+          <a class="flex gap-2 flex-col" href="#?blog=01" blog="01">
+            <h3 class="font-bold text-xl">
+              How I Made 5K In A Week
+            </h3>
+            <p class="opacity-50 text-sm max-w-81">
+              14 days, a Discord reel, and a self-hosted Valentine's webapp that ended up on Shopify.
+            </p>
+            <div class="flex text-sm font-bold items-center gap-2">
+              Read Post
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+          <a class="flex gap-2 flex-col" href="https://dev.to/axtant" target="_blank" rel="noopener noreferrer">
+            <h3 class="font-bold text-xl">Read more on dev.to</h3>
+            <p class="opacity-50 text-sm max-w-81">
+              More articles, tutorials, and thoughts on dev.to/axtant
+            </p>
+            <div class="flex text-sm font-bold items-center gap-2">
+              Visit Profile
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </section>
+      </main>
+      <section
+        id="blog-space"
+        class="hidden mx-auto w-full px-12 md:px-0 md:w-2/3 lg:w-1/2 2xl:w-1/3 h-full relative pt-4 pb-16 flex flex-col"
+      >
+        <div class="w-full flex justify-between" id="blog-nav">
+          <a id="back" href="javascript:void(0)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span> Back </span>
+          </a>
         </div>
+        <div id="blog-content"></div>
+      </section>
+      <footer
+        class="flex flex-col md:flex-row justify-center gap-4 items-center font-normal text-sm pb-6 opacity-70"
+        id="footer"
+      >
+        <p style="opacity: 0">Made with ❤️ in 2025</p>
+        <p style="opacity: 0" class="hidden md:block">•</p>
+        <a
+          style="opacity: 0"
+          class="font-bold"
+          href="https://github.com/axtant/about-me"
+          >Source Code</a
+        >
+        <!-- TODO: replace # with your repository URL -->
+      </footer>
     </div>
+    <section id="blog-01">
+      <img
+        src="./assets/blog1/Website.webp"
+        alt="Bee My Valentine — the actual website"
+        class="w-full rounded-3xl shadow-md my-8"
+        loading="lazy"
+      />
+      <div>
+        <h2>Setting the Scene</h2>
+        <p>I was sitting idle on a Discord server when a friend dropped a reel in chat — a cute ad about how to make your Valentine feel special. <em>You know the type.</em></p>
+        <p>Something clicked. I wanted to build my own self-hosted version of that. The timing? <em>February 1st. Exactly 14 days before Valentine's Day.</em> Challenge accepted.</p>
+      </div>
+      <div>
+        <h2>The Task Was Simple</h2>
+        <ul>
+          <li>User enters their question</li>
+          <li>Adds multiple answer options</li>
+          <li>Selects one as the "correct" answer</li>
+          <li>Shares the generated link — <em>a choice they won't be able to refuse 😉</em></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Technical Details</h2>
+        <ul>
+          <li><strong>Domain</strong> — Namecheap</li>
+          <li><strong>Framework</strong> — Vue.js</li>
+          <li><strong>Database</strong> — None. No data, no database, no problem.</li>
+          <li><strong>Hosting</strong> — GCP Firebase</li>
+          <li><strong>AI-powered suggestions</strong> — because <em>why not?</em> Fallback questions included in case the API fails.</li>
+        </ul>
+        <p>The full repo is open source at <a href="https://github.com/axtant/bee-my-valentine" target="_blank" rel="noopener noreferrer">github.com/axtant/bee-my-valentine</a>.</p>
+      </div>
+      <div>
+        <h2>Now Let's Try Selling It</h2>
+        <p>Web-friendly. Phone-friendly. So — <em>why not Shopify?</em></p>
+        <p>The curiosity pushed me to spin up a Meta Ads account and run 5 campaigns across different age groups, platforms, and ad formats. Real question: would people actually buy this?</p>
+        <img
+          src="./assets/blog1/Ads.png"
+          alt="Meta Ads campaign stats"
+          loading="lazy"
+        />
+        <ul>
+          <li><strong>Day 0–1</strong> <em>(testing days)</em> — ₹2,899 spent · 4 orders</li>
+          <li><strong>Day 2–4</strong> <em>(gaining attention)</em> — ₹3,000 spent · 11 orders</li>
+          <li><strong>Day 5–6</strong> <em>(gaining even more)</em> — ₹2,500 spent · 17 orders</li>
+        </ul>
+        <img
+          src="./assets/blog1/Revenu.png"
+          alt="Shopify sales graph"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <h2>Conclusion</h2>
+        <p>This was my first-ever experience selling a digital product through paid ads and reaching a mass audience. <em>And honestly? It was a rush.</em></p>
+        <p>Generated around ₹5,000 in revenue initially, then got a boost on Valentine's Day itself — bumping profits to <strong>₹6,400</strong>. The ad costs to reach the right audience were higher though, which ultimately resulted in a small loss.</p>
+        <p>My goal of earning lakhs through digital products is still very much alive. I'm still on the path of learning and understanding the market better.</p>
+        <p><em>In the end, fulfilling 32 orders and helping 64+ people connect more closely made this Valentine's truly special for me.</em></p>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/motion@v12.23.11/dist/motion.js"></script>
+    <script src="./script.js"></script>
+    <style>
+      #projects:not([gone-back]) > a *,
+      #projects:not([gone-back]) > div {
+        opacity: 0;
+      }
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
+      #projects > a {
+        i {
+          transition: margin 0.1s;
+        }
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+        &:hover {
+          i {
+            margin-left: 5px;
+          }
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link") 
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-</body>
+      }
+    </style>
+  </body>
 </html>
